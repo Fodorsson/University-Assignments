@@ -1,0 +1,99 @@
+
+.column-left {
+  float: left;
+  margin-right:5vw;
+  margin-left:-22vw;
+  width: 27vw;
+  height: 800px;
+  overflow:scroll;
+  overflow-x:scroll;
+}
+
+.column-center {
+  float: left;
+}
+
+.column-right {
+  float: left;
+  margin-left:5vw;
+  text-align: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+body, input, button {
+    font-size: 12pt;
+    color: #333;
+}
+
+input[type=text] {
+    border: 1px solid #eee;
+    margin: 3px 0;
+    width: 265px;
+    padding: 8px 5px;
+}
+
+button {
+    background-color:blue;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+.wrapper {
+    text-align: right;
+}
+
+.welcome h1,
+.welcome h2 {
+    text-align: center;
+    color: blue;
+    font-family: arial black; 
+}
+
+.welcome input {
+    width: 100%;
+	border-color: blue;
+}
+
+.wrapper td {
+    text-align: left;
+    vertical-align: top;
+}
+
+.spacejump-field td {
+    border: 2px solid blue;
+	width:5vw;
+	height:5vw;
+}
+
+
+
+.welcome .p-name {
+    margin: 40px 0;
+    font-family: arial black;
+    color: blue;
+	text-align: center;
+}
+
+.reset-btn {
+    display: inline-block;
+    font-size: 10pt;
+    color: blue;
+    margin-top: 50px;
+}

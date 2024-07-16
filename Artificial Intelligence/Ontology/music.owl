@@ -1,0 +1,778 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#arranges -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#arranges">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Touring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#attends -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#attends">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Fan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#buys -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#buys">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Fan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Merch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#charges -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#charges">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#paysFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Fan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#consistsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Touring"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#contractsLabel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#contractsLabel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#contractsPublisher -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#contractsPublisher">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Publisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#distributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#distributes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Retail"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#mechanicalRoyaltiesD2R -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#mechanicalRoyaltiesD2R">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#mechanicalRoyaltiesR2A -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#mechanicalRoyaltiesR2A">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#mechanicalRoyaltiesS2D -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#mechanicalRoyaltiesS2D">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ownsMaster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ownsMaster">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#MasterRecording"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ownsMerch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ownsMerch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Merch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#paysFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#paysFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Fan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#performanceRoyaltiesD2P -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#performanceRoyaltiesD2P">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Publisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#performanceRoyaltiesS2PRO -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#performanceRoyaltiesS2PRO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PerformingRightsOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#performsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#performsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#produces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordingStudio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#MasterRecording"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#promotesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#promotesTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Fan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#publishingRoyalties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#publishingRoyalties">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PerformingRightsOrganization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Publisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#recordsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#recordsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordingStudio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#registers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#registers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Publisher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PerformingRightsOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#revenue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#revenue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PerformingRightsOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#soldAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#soldAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Merch"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#songwriterRoyaltiesP2A -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#songwriterRoyaltiesP2A">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Publisher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#songwriterRoyaltiesPRO2A -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#songwriterRoyaltiesPRO2A">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PerformingRightsOrganization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#suppliesMaster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#suppliesMaster">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Manufacturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#suppliesProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#suppliesProduct">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordingStudio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ceo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ceo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#founded -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#founded">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#labelType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#labelType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordingStudio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#origin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#origin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#producer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#producer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordingStudio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#rate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordingStudio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ticketPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ticketPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ticketsSold -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ticketsSold">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#venueName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#venueName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Artist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#CD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#CD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Cassette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Cassette">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#DigitalDownload -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#DigitalDownload">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Fan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Fan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Manufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Manufacturer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#MasterRecording -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#MasterRecording"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Merch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Merch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PerformingRightsOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PerformingRightsOrganization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PublicPlaces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PublicPlaces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Publisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Publisher"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Radio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Radio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordingStudio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordingStudio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Retail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Retail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Streaming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Streaming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Television -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Television">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Touring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Touring">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#consistsOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Concert"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Vinyl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Vinyl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ASCAP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#ASCAP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PerformingRightsOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#AppleMusic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#AppleMusic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Streaming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#BMI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#BMI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#PerformingRightsOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Bandcamp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Bandcamp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#DigitalDownload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#BestBuy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#BestBuy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Retail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#CDBaby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#CDBaby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#DistroKid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#DistroKid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#EpitaphRecords -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#EpitaphRecords">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <address>Hollywood, California, United States</address>
+        <ceo>Brett Gurewitz</ceo>
+        <founded rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</founded>
+        <labelType>indie</labelType>
+        <name>Epitaph Records</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#FatWreckChords -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#FatWreckChords">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <address>2196 Palou Ave., San Francisco, California, United States</address>
+        <ceo>Michael Burkett</ceo>
+        <founded rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</founded>
+        <labelType>indie</labelType>
+        <name>Fat Wreck Chords</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#SonyMusicEntertainment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#SonyMusicEntertainment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <address>New York City, United States</address>
+        <ceo>Rob Stringer</ceo>
+        <founded rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1929</founded>
+        <labelType>major</labelType>
+        <name>Sony Music Entertainment</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Spotify -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Spotify">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Streaming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Target -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Target">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Retail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Tunecore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Tunecore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Distributor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#UniversalMusicGroup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#UniversalMusicGroup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <address>2220 Colorado Avenue, Santa Monica, California, United States</address>
+        <ceo>Lucian Grainge</ceo>
+        <founded>September 1934</founded>
+        <labelType>major</labelType>
+        <name>Universal Music Group</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#WarnerMusicGroup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#WarnerMusicGroup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#RecordLabel"/>
+        <address>New York City, New York, United States</address>
+        <ceo>Stephen Cooper</ceo>
+        <founded rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1958</founded>
+        <labelType>major</labelType>
+        <name>Warner Music Group</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#iTunes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#iTunes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#DigitalDownload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#CD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Cassette"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fodor/ontologies/2020/9/untitled-ontology-12#Vinyl"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
